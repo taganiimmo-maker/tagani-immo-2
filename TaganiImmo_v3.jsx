@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import * as THREE from "three";
 
+// v3.0.0
 /* ═══════════════════════════════════════════════════
    TRANSLATIONS
 ═══════════════════════════════════════════════════ */
