@@ -1786,7 +1786,7 @@ export default function TaganiImmo(){
     if(!fbUser)return;
     if(userDoc?.role==="admin"){
       const r=ref(db,"inspections");
-      onValue(r,snap=>{const val=snap.val();setAllInspections(val?Object.values(val).sort((a,b)=>(b.lastSaved||b.timestamp)-(a.lastSaved||a.timestamp)):[]));});
+      onValue(r,snap=>{const val=snap.val();setAllInspections(val?Object.values(val).sort((a,b)=>(b.lastSaved||b.timestamp)-(a.lastSaved||a.timestamp)):[]);});
       const ur=ref(db,"users");
       onValue(ur,snap=>{setAllUsers(snap.val()||{});});
       const lr=ref(db,"agentLocations");
