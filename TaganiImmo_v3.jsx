@@ -602,8 +602,7 @@ function ChatPanel({ messages, currentUser, onSend, S, t }) {
       </div>
       <div style={{paddingTop:8,borderTop:`1px solid ${S.bdr}`,display:"flex",gap:8}}}>
         <input value={msg} onChange={e=>setMsg(e.target.value)} onKeyDown={e=>e.key==="Enter"&&send()}
-          placeholder={`${t.askAI}…`}
-          style={{flex:1,padding:"11px 13px",borderRadius:8,border:`1px solid ${S.bdr}`,background:S.inp,color:S.txt,fontSize:14,outline:"none",minHeight:48}}/>
+placeholder={`${t.askAI}…`} />          style={{flex:1,padding:"11px 13px",borderRadius:8,border:`1px solid ${S.bdr}`,background:S.inp,color:S.txt,fontSize:14,outline:"none",minHeight:48}}/>
         <button onClick={send} style={{padding:"0 16px",borderRadius:8,background:GOLD,color:"#0d1117",border:"none",cursor:"pointer",fontSize:18,fontWeight:700,minWidth:48,minHeight:48}}>→</button>
       </div>
     </div>
