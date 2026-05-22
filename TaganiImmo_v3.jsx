@@ -2094,4 +2094,5 @@ export default function TaganiImmo(){
       </div>
     );
   }
+}
 
